@@ -1,0 +1,1195 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>    
+    
+
+    <link rel="stylesheet" type="text/css" id="theme" href="~/Content/assets/css/theme-default.css" />
+    <link rel="stylesheet" type="text/css" id="theme" href="~/Content/assets/css/CustomCss.css" />
+    <style>
+        .dataTables_length {
+            border-bottom: 0px;
+        }
+
+
+        .modal-open {
+            padding-right: 0px !important;
+        }
+
+        .DemoBS2 {
+            margin: 20px;
+        }
+
+        #LiLogo:hover {
+            background-color: #e34724;
+        }
+
+        .x-navigation.x-navigation-horizontal {
+            background: #3A5795;
+        }
+
+        .x-navigation {
+            background: #3A5795;
+        }
+
+            .x-navigation > li.xn-logo > a:first-child {
+                background-color: #fff;
+            }
+
+            .x-navigation > li.xn-logo > a:first-child {
+                color: #3a5795 !important;
+            }
+
+                .x-navigation > li.xn-logo > a:first-child:hover {
+                    background-color: #fff !important;
+                }
+
+        .page-content {
+            height: auto !important;
+        }
+
+        table td, table th {
+            /*color: black !important;*/
+            color: black;
+        }
+
+        body, input[type="text"] {
+            color: black !important;
+        }
+
+        input[type="button"], input[type="submit"], button.btn {
+            /*background-color: #ccc !important;
+            color: black !important;
+            border: 1px solid black !important;*/
+            font-weight: bold !important;
+        }
+
+        .nopadding {
+            padding: 0 !important;
+        }
+
+        .x-navigation > li.xn-logo {
+            display: block;
+            margin: 0 auto;
+        }
+
+            .x-navigation > li.xn-logo > a:first-child {
+                /*background: #fff url("../../Content/images/Logo/logo.png") no-repeat scroll center center;*/
+                background-size: 165px 50px;
+                /*background-position-x: 30px;*/
+                /*background-position: center;*/
+                -moz-border-radius: 0px 0px 0px 0px;
+                -webkit-border-radius: 0px 0px 0px 0px;
+                border-radius: 0px 0px 0px 0px;
+                padding: 0;
+            }
+
+        .x-navigation.x-navigation-minimized > li.xn-logo > a:first-child {
+            background-size: 50px 50px;
+            /*background-position-x: 30px;*/
+            /*padding: 0px;
+            width: 50px;*/
+            /*background-image: url("../../Content/images/Logo/logosmall.png");*/
+        }
+
+        #SpnHome {
+            color: white;
+            margin-left: 25px;
+            margin-right: 10px;
+        }
+
+            #SpnHome:hover {
+                color: white;
+                margin-left: 25px;
+                text-decoration: underline;
+            }
+
+        .ClsAction {
+            min-width: 115px;
+        }
+
+
+
+        .edit-class {
+            margin-bottom: 15px !important;
+        }
+
+        #messagebox_overlay {
+            z-index: 10000;
+        }
+
+        .modal-backdrop {
+            position: fixed !important;
+        }
+
+        div.datepicker td.today {
+            border: 1px #33414e solid;
+        }
+    </style>
+
+</head>
+<body>
+
+
+    <!-- START PAGE CONTAINER -->
+    <div class="page-container page-navigation-toggled page-container-wide">
+
+        <!-- START PAGE SIDEBAR -->
+
+        <div class="page-sidebar">
+            <!-- START X-NAVIGATION -->
+            <ul class="x-navigation x-navigation-minimized x-navigation-hover">
+                <li class="xn-logo col-md-12">
+
+
+                    <a href="/HOME" style="background-image: url(/Content/images/Logo/logosmall.png);" id="SmallLogoViewID"></a>
+                    <a href="/HOME" style="background: #fff url(/Content/images/Logo/logo.png) no-repeat scroll center center;padding-top: 35px;display:none;" id="LargeLogoViewID"></a>
+                    <a href="#" class="x-navigation-control"></a>
+                </li>
+
+                <!--Dashboard-->
+                <li>
+                    <a href="/home/index"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>
+                </li>
+                <!--Other menus-->
+                <li class="xn-openable">
+
+
+                    <ul class="navigation-scroll customScroll">
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+                <li class="xn-openable">
+
+
+                    <ul class="navigation-scroll customScroll">
+                        <li>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+                <li class="xn-openable">
+
+
+                    <ul class="navigation-scroll customScroll">
+                        <li>
+                        </li>
+                        <li>  <a href="/Reporting/StaffPasswordDetail"><span class="fa fa-info-circle"></span>Employee Credentials</a> </li>
+
+                        <li>
+                        </li>
+                        <li><a href="#"><span class="fa fa-info-circle"></span>Employee Reports</a> </li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="#"><span class="fa fa-info-circle"></span>Salary Letters</a> </li>
+
+                        <li>
+                        </li>
+                        <li><a href="/Reporting/CompanyStaffDetailReport"><span class="fa fa-info-circle"></span>Staff Details</a></li>
+
+                        <li class="xn-openable">
+                            <a href="#"><span class="fa fa-info-circle"></span>Document Reports</a>
+                            <ul class="navigation-scroll customScroll">
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/EmployeeLabourContractReportingViewer"><span class="fa fa-info-circle"></span>Expired Document Report</a> </li>
+
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/EmployeeLabourCardStatusReportingViewer"><span class="fa fa-info-circle"></span>Labour Card Details Report</a> </li>
+
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/DetailStaffReportingViewer"><span class="fa fa-info-circle"></span>Staff Document Detail Report</a> </li>
+
+
+                            </ul>
+                        </li>
+                        <li class="xn-openable">
+                            <a href="#"><span class="fa fa-info-circle"></span>Addition Reports</a>
+                            <ul class="navigation-scroll customScroll">
+                                <li>
+                                </li>
+                                <li><a href="/Reporting/PayAdditionReport"><span class="fa fa-info-circle"></span>Pay Addition Report</a> </li>
+
+
+                            </ul>
+                        </li>
+                        <li class="xn-openable">
+                            <a href="#"><span class="fa fa-info-circle"></span>Attendance Reports</a>
+                            <ul class="navigation-scroll customScroll">
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/AttendanceReportViewer/WorkingDays"><span class="fa fa-info-circle"></span>Working Days</a> </li>
+
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/AttendanceReportViewer/WorkingHours"><span class="fa fa-info-circle"></span>Working Hours</a> </li>
+
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/AttendanceReportViewer/LateAndEarlyMinutes"><span class="fa fa-info-circle"></span>Late And Early Minutes</a> </li>
+
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/AttendanceReportViewer/DailyAttendanceByStatus"><span class="fa fa-info-circle"></span>Daily Attendance By Status</a> </li>
+
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/AttendanceReportViewer/EmployeeDailyAttendance"><span class="fa fa-info-circle"></span>Employee Daily Attendance</a> </li>
+
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/AttendanceReportViewer/MonthlyAttendanceSummary"><span class="fa fa-info-circle"></span>Monthly Attendance Summary</a> </li>
+
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/AttendanceReportViewer/AttendanceStatistics"><span class="fa fa-info-circle"></span>Attendance Statistics</a> </li>
+
+
+                            </ul>
+                        </li>
+                        <li class="xn-openable">
+                            <a href="#"><span class="fa fa-info-circle"></span>Deduction Report</a>
+                            <ul class="navigation-scroll customScroll">
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/AbsentDeductableReportViewer"><span class="fa fa-info-circle"></span>Absent Deductable</a> </li>
+
+                                <li>
+                                </li>
+                                <li><a href="/Reporting/AbsentDeductableSalaryReportViewer"><span class="fa fa-info-circle"></span>Absent Deduction With Salary</a> </li>
+
+                                <li>
+                                </li>
+                                <li><a href="/Reporting/PayDeductionReport"><span class="fa fa-info-circle"></span>Pay Deduction Report</a> </li>
+
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/AbsentUndeductableReportViewer"><span class="fa fa-info-circle"></span>Absent Undeductable</a> </li>
+
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/EarlyDeductableReport"><span class="fa fa-file-text-o"></span>Early Deductable Report</a></li>
+
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/LateDeductableReportViewer"><span class="fa fa-info-circle"></span>Late Deductable</a> </li>
+
+
+                            </ul>
+                        </li>
+                        <li class="xn-openable">
+                            <a href="#"><span class="fa fa-info-circle"></span>Gratuity &amp; Final Settlement Reports</a>
+                            <ul class="navigation-scroll customScroll">
+                                <li>
+                                </li>
+                                <li>  <a href="/reporting/EmployeeFinalSettlementReport"><span class="fa fa-info-circle"></span>Final Settlement Report</a> </li>
+
+                                <li>
+                                    <a href="/Reporting/EmployeeGratuityListReportViewer"><span class="fa fa-info-circle"></span>Employee Gratuity List</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="xn-openable">
+                            <a href="#"><span class="fa fa-info-circle"></span>Leave Reports</a>
+                            <ul class="navigation-scroll customScroll">
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/EmployeeLeaveRegister"><span class="fa fa-info-circle"></span>Employee Leave Register</a> </li>
+
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/LeaveBalanceReport"><span class="fa fa-info-circle"></span>Leave Balance Report</a> </li>
+
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/LeaveBalanceSalaryReport"><span class="fa fa-info-circle"></span>Leave Balance Salary Report</a> </li>
+
+
+                            </ul>
+                        </li>
+                        <li class="xn-openable">
+                            <a href="#"><span class="fa fa-info-circle"></span>Ministry Reports</a>
+                            <ul class="navigation-scroll customScroll">
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/EmployeeStatisticsByNationalityReport"><span class="fa fa-info-circle"></span>Employee Statistics By Nationality Report</a> </li>
+
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/MinistryReportVersion1"><span class="fa fa-info-circle"></span>Ministry Report Version1</a> </li>
+
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/StatisticsPerNationalityReport"><span class="fa fa-info-circle"></span>Statistics Per Nationality Report</a> </li>
+
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/TotalStaffReport"><span class="fa fa-info-circle"></span>Total Staff Report</a> </li>
+
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/EmployeeMinistryReport"><span class="fa fa-info-circle"></span>Employees Record For Ministry Report (En)</a> </li>
+
+
+                            </ul>
+                        </li>
+                        <li class="xn-openable">
+                            <a href="#"><span class="fa fa-info-circle"></span>Academic Reports</a>
+                            <ul class="navigation-scroll customScroll">
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/StaffQualificationReport"><span class="fa fa-info-circle"></span>Staff Qualification Report</a> </li>
+
+
+                            </ul>
+                        </li>
+                        <li class="xn-openable">
+                            <a href="#"><span class="fa fa-info-circle"></span>Benefit Reports</a>
+                            <ul class="navigation-scroll customScroll">
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/AccommodationReport"><span class="fa fa-info-circle"></span>Accommodation Report</a> </li>
+
+                                <li>
+                                </li>
+                                <li><a href="/Reporting/ProfessionalDevelopmentReport"><span class="fa fa-info-circle"></span>Professional Development Report</a> </li>
+
+
+                            </ul>
+                        </li>
+                        <li>
+                        </li>
+                        <li>  <a href="/Reporting/FingerPrintMachineData"><span class="fa fa-info-circle"></span>Finger Print Machine Data Report</a> </li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="#"><span class="fa fa-info-circle"></span>Employee Letters</a> </li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="#"><span class="fa fa-info-circle"></span>Other Letters</a> </li>
+
+                        <li class="xn-openable">
+                            <a href="#"><span class="fa fa-info-circle"></span>Salary Reports</a>
+                            <ul class="navigation-scroll customScroll">
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/SalaryIncrementReport"><span class="fa fa-info-circle"></span>Salary Increment Report</a> </li>
+
+
+                            </ul>
+                        </li>
+                        <li class="xn-openable">
+                            <a href="#"><span class="fa fa-user"></span>Employee Reports</a>
+                            <ul class="navigation-scroll customScroll">
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/EmployeeDistributionSectionReport"><span class="fa fa-info-circle"></span>Employee Distribution by Section</a> </li>
+
+
+                            </ul>
+                        </li>
+                        <li class="xn-openable">
+                            <a href="#"><span class="fa fa-user"></span>Payroll Reports</a>
+                            <ul class="navigation-scroll customScroll">
+                                <li>
+                                </li>
+                                <li>  <a href="/Reporting/PayrollTransactionReport"><span class="fa fa-info-circle"></span>Payroll Transaction Report</a> </li>
+
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span class="fa fa-user"></span>Tax Reports</a>
+                        </li>
+
+                    </ul>
+
+                </li>
+                <li class="xn-openable">
+
+
+                    <ul class="navigation-scroll customScroll">
+                        <li>
+                        </li>
+                        <li>  <a href="/Reporting/PayrollTransactionReport"><span class="fa fa-info-circle"></span>Payroll Transaction Report</a> </li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/Reporting/PayrollVarificationreportViewer"><span class="fa fa-info-circle"></span>Payroll Varification</a> </li>
+
+
+                    </ul>
+
+                </li>
+                <li class="xn-openable">
+
+
+                    <ul class="navigation-scroll customScroll">
+                        <li>
+                        </li>
+                        <li>  <a href="/Reporting/EmployeeTestimonalLetterReport"><span class="fa fa-info-circle"></span>Testimonal Letter Report</a> </li>
+
+
+                    </ul>
+
+                </li>
+                <li class="xn-openable">
+
+
+                    <ul class="navigation-scroll customScroll">
+                        <li>
+                        </li>
+                        <li>  <a href="/Reporting/EmployeeExprienceLetterReport"><span class="fa fa-info-circle"></span>Employee Experience Letter</a> </li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/Reporting/EmployeeNOCLetterReport"><span class="fa fa-info-circle"></span>NOC Letter</a> </li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/Reporting/StaffRenewalLetterReport"><span class="fa fa-info-circle"></span>Staff Renewal Letter</a> </li>
+
+                        <li>
+                        </li>
+                        <li><a href="/Reporting/EmployeeAgreementLetterReport"><span class="fa fa-info-circle"></span>Employee Agreement Letter</a></li>
+
+                        <li>
+                        </li>
+                        <li><a href="/Reporting/EmployeeClarificationLetterReport"><span class="fa fa-info-circle"></span>Employee Clarification Letter</a></li>
+
+                        <li>
+                        </li>
+                        <li><a href="/Reporting/EmployeeSchoolJoiningDateLetterReport"><span class="fa fa-info-circle"></span>Employee Joining Date Letter</a></li>
+
+                        <li>
+                        </li>
+                        <li><a href="/Reporting/EmployeePermissionLetterReport"><span class="fa fa-info-circle"></span>Employee Permission Letter</a></li>
+
+                        <li>
+                        </li>
+                        <li><a href="/Reporting/EmployeeServiceCertificateLetterReport"><span class="fa fa-info-circle"></span>Service Certificate Letter</a></li>
+
+
+                    </ul>
+
+                </li>
+                <li class="xn-openable">
+
+
+                    <ul class="navigation-scroll customScroll">
+                        <li>
+                        </li>
+                        <li>  <a href="/Reporting/SalaryTransferCertificate"><span class="fa fa-info-circle"></span>Salary Transfer Certificate</a> </li>
+
+
+                    </ul>
+
+                </li>
+                <li class="xn-openable">
+
+
+                    <ul class="navigation-scroll customScroll">
+                        <li>
+                        </li>
+                        <li><a href="/Reporting/SalaryStatementDetailReport"><span class="fa fa-info-circle"></span>Employee Salary Statement Report</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/Reporting/SalaryIncrementReport"><span class="fa fa-info-circle"></span>Salary Increment Report</a> </li>
+
+                        <li>
+                        </li>
+                        <li><a href="/Reporting/SalaryRevisionCrReport"><span class="fa fa-info-circle"></span>Salary Revision Report</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/Reporting/SalaryReportBasedOnCycle"><span class="fa fa-info-circle"></span>Salary Report Based On Cycle</a> </li>
+
+                        <li>
+                        </li>
+                        <li><a href="/Reporting/SalaryListReport"><span class="fa fa-info-circle"></span>Employee Salary List Report</a></li>
+
+                        <li>
+                        </li>
+                        <li><a href="/Reporting/PayCycleSummaryReport"><span class="fa fa-info-circle"></span>Pay Cycle Summary Report</a></li>
+
+                        <li>
+                        </li>
+                        <li><a href="/Reporting/EmployeePaySlipStatementReport"><span class="fa fa-info-circle"></span>Pay Slip Statement Report</a></li>
+
+                        <li>
+                        </li>
+                        <li><a href="/Reporting/SalariesBySectionReport"><span class="fa fa-info-circle"></span>Salaries By Section Report</a></li>
+
+
+                    </ul>
+
+                </li>
+                <li class="xn-openable">
+
+
+                    <ul class="navigation-scroll customScroll">
+                        <li>
+                        </li>
+                        <li>  <a href="/Reporting/EmployeeDistributionSectionReport"><span class="fa fa-info-circle"></span>Employee Distribution by Section</a> </li>
+
+                        <li>
+                        </li>
+                        <li><a href="/Reporting/EmployeeGeneralReport"><span class="fa fa-info-circle"></span>Employee General Report</a></li>
+
+                        <li>
+                        </li>
+                        <li><a href="/Reporting/StaffFollowUpReport"><span class="fa fa-info-circle"></span>Staff Follow Up Report</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/Reporting/EmployeeNoOfExcusesReport"><span class="fa fa-info-circle"></span>Employee No Of Excuses Report</a> </li>
+
+                        <li>
+                        </li>
+                        <li><a href="/reporting/employeephotolistreport"><span class="fa fa-info-circle"></span>Employee Photo List Report</a></li>
+
+
+                    </ul>
+
+                </li>
+                <li class="xn-openable">
+
+
+                    <ul class="navigation-scroll customScroll">
+                        <li>
+                        </li>
+                        <li>  <a href="/Reporting/EmployeeCountByNationalityGraph"><span class="fa fa-info-circle"></span>Employees Count By Nationality Report</a> </li>
+
+
+                    </ul>
+
+                </li>
+                <li class="xn-openable">
+
+
+                    <ul class="navigation-scroll customScroll">
+                        <li>
+                        </li>
+                        <li>  <a href="/Reporting/AttendanceReportViewer/WorkingDays"><span class="fa fa-info-circle"></span>Working Days</a> </li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/Reporting/AttendanceReportViewer/WorkingHours"><span class="fa fa-info-circle"></span>Working Hours</a> </li>
+
+                        <li>
+                        </li>
+                        <li><a href="/Reporting/EmployeeAbsentAndLateRecords"><span class="fa fa-info-circle"></span>Employee Absent And Late Records Report</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/Reporting/AttendanceReportViewer/LateAndEarlyMinutes"><span class="fa fa-info-circle"></span>Late And Early Minutes</a> </li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/Reporting/AttendanceReportViewer/DailyAttendanceByStatus"><span class="fa fa-info-circle"></span>Daily Attendance By Status</a> </li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/Reporting/AttendanceReportViewer/EmployeeDailyAttendance"><span class="fa fa-info-circle"></span>Employee Daily Attendance</a> </li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/Reporting/AttendanceReportViewer/MonthlyAttendanceSummary"><span class="fa fa-info-circle"></span>Monthly Attendance Summary</a> </li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/Reporting/AttendanceReportViewer/AttendanceStatistics"><span class="fa fa-info-circle"></span>Attendance Statistics</a> </li>
+
+
+                    </ul>
+
+                </li>
+                <li class="xn-openable">
+
+
+                    <ul class="navigation-scroll customScroll">
+                        <li>
+                        </li>
+                        <li><a href="/Reporting/JordanIncomeTaxReport"><span class="fa fa-info-circle"></span>Income Tax Report (Jordania Law)</a></li>
+
+
+                    </ul>
+
+                </li>
+                <li class="xn-openable">
+                    <a href="#"><span class="fa fa-cogs"></span> <span class="xn-text">SA</span></a>
+
+                    <ul class="navigation-scroll customScroll">
+                        <li>
+                        </li>
+                        <li>  <a href="/department/index"><span class="fa fa-cubes"></span>Department</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/Position/Index"><span class="fa fa-tags"></span>Employee Position</a></li>
+
+                        <li>
+                        </li>
+                        <li><a href="/GratuitySetup/Index"><span class="fa fa-money"></span>Gratuity Setup</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/Job/Index"><span class="fa fa-text-height"></span>Job Title</a></li>
+
+                        <li>
+                        </li>
+                        <li><a href="/LeaveType/LeaveReason"><span class="fa fa-eraser"></span>Termination Reasons</a></li>
+
+                        <li>
+                        </li>
+                        <li><a href="/VacationType/index"><span class="fa fa-sitemap"></span>Leave Types</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/moetitle/index"><span class="fa fa-file"></span>MOE Title</a></li>
+
+                        <li>
+                        </li>
+                        <li><a href="/Company/index"><span class="fa fa-university"></span>Organizations Info</a></li>
+
+                        <li>
+                        </li>
+                        <li><a href="/GeneralAccounts/Index"><span class="fa fa-money"></span>Pay Category Accounts</a></li>
+
+                        <li>
+                        </li>
+                        <li><a href="/PayCycle/Index"><span class="fa fa-refresh"></span>Pay Cycles</a></li>
+
+                        <li>
+                        </li>
+                        <li>
+                            <a href="/Deduction/DeductionTypes">
+                                <span class="fa fa-credit-card"></span>Pay Deduction
+
+                                Type
+                            </a>
+                        </li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/PaySalaryAllowance/Index"><span class="fa fa-money"></span>Salary Allowances &amp; Additions</a></li>
+
+                        <li>
+                        </li>
+                        <li><a href="/holiday/index"><span class="fa fa-plane"></span>Public Holidays</a></li>
+
+                        <li>
+                        </li>
+                        <li><a href="/EmployeeCredential/Index"><span class="fa fa-unlock-alt"></span>User Accounts</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/UserGroup/index"><span class="fa fa-university"></span>User Groups</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/userrole/index"><span class="fa fa-user"></span>User Roles</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/GeneralControl/Index"><span class="fa fa-cubes"></span>General Control</a></li>
+
+
+                    </ul>
+
+                </li>
+                <li class="xn-openable">
+                    <a href="#"><span class="fa fa-users"></span> <span class="xn-text">Employee</span></a>
+
+                    <ul class="navigation-scroll customScroll">
+                        <li>
+                        </li>
+                        <li><a href="/Employee/ListEmployee"><span class="fa fa-user"></span>Employee List</a></li>
+
+                        <li>
+                        </li>
+                        <li><a href="/Document"><span class="fa fa-user"></span>Document List</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/Document/DocumentExpiry"><span class="fa fa-file-text-o"></span>Document Expiry</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/Academic/Index"><span class="fa fa-graduation-cap"></span>Qualification Details</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/PerformanceRating/Index"><span class="fa fa-info-circle"></span>Performance Rating</a> </li>
+
+                        <li>
+                        </li>
+                        <li><a href="/FamilyOutStandingBalance/Index"><span class="fa fa-info-circle"></span>Family Outstanding Balance</a></li>
+
+
+                    </ul>
+
+                </li>
+                <li class="xn-openable">
+                    <a href="#"><span class="fa fa-usd"></span> <span class="xn-text">PayRoll</span></a>
+
+                    <ul class="navigation-scroll customScroll">
+                        <li>
+                        </li>
+                        <li>  <a href="/BankInformation/Index"><span class="fa fa-info-circle"></span>Bank Information</a> </li>
+
+                        <li>
+                        </li>
+                        <li><a href="/GratuitySetup/finalsettlement"><span class="fa fa-money"></span>Gratuity &amp; Final Settlement</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/PayRequestConfirmation/Index"><span class="fa fa-ticket"></span>Payroll Confirmation Request</a> </li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/SalaryInformation/Index"><span class="fa fa-info-circle"></span>Salary Information</a> </li>
+
+                        <li>
+                        </li>
+                        <li><a href="/PayAddition/Index"><span class="fa fa-sort-numeric-asc"></span>Pay Additions</a></li>
+
+                        <li>
+                        </li>
+                        <li><a href="/Deduction/Index"><span class="fa fa-sort-numeric-desc"></span>Pay Deductions</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/Payroll/Index"><span class="fa fa-spinner"></span>Run PayRoll</a></li>
+
+                        <li>
+                        </li>
+                        <li><a href="/PaySundries/Index"><span class="fa fa-life-ring"></span>Pay Sundries</a></li>
+
+                        <li>
+                        </li>
+                        <li><a href="/PasiTax/Index"><span class="fa fa-text-width"></span>Tax</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/WPS/Index"><span class="fa fa-text-width"></span>WPS</a></li>
+
+                        <li>
+                        </li>
+                        <li><a href="/SocialSecurity/Index"><span class="fa fa-text-width"></span>Social Security</a></li>
+
+
+                    </ul>
+
+                </li>
+                <li class="xn-openable">
+                    <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">Benefits</span></a>
+
+                    <ul class="navigation-scroll customScroll">
+                        <li>
+                        </li>
+                        <li>  <a href="/ProfessionalTraining/Index"><span class="fa fa-text-width"></span>Professional Training</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/Insurance/Index"><span class="fa fa-text-width"></span>Insurance</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/EMedical/Index"><span class="fa fa-text-width"></span>E-Medical File</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/Allowance/Index"><span class="fa fa-text-width"></span>Allowance</a></li>
+
+
+                    </ul>
+
+                </li>
+                <li class="xn-openable">
+                    <a href="#"><span class="fa fa-pencil-square-o"></span> <span class="xn-text">Attendance</span></a>
+
+                    <ul class="navigation-scroll customScroll">
+                        <li>
+                        </li>
+                        <li>  <a href="/DailyAttendance/Index"><span class="fa fa-columns"></span>Daily Attendance</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/absent/Index"><span class="fa fa-thumb-tack"></span>Absence</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/AbsentLateInEarlyOut/Index"><span class="fa fa-adn"></span>Add Late</a></li>
+
+                        <li>
+                        </li>
+                        <li><a href="/ShortLeave/Index"><span class="glyphicon glyphicon-folder-close"></span>Short Leave</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/AbsentLateDeduction/Index"><span class="fa fa-adjust"></span>Absence Deductions</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/LateDeduction/Index"><span class="fa fa-star-half-o"></span>Late Deductions</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/GeneralDeductions/Index"><span class="fa fa-info-circle"></span>General Deductions</a> </li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/Shift/Index"><span class="fa fa-thumb-tack"></span>Shift</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/Shift/UserShift"><span class="fa fa-thumb-tack"></span>User Shift</a></li>
+
+                        <li>
+                        </li>
+                        <li><a href="/Vacation/Index"><span class="glyphicon glyphicon-folder-close"></span>Add Leave</a></li>
+
+                        <li>
+                        </li>
+                        <li>  <a href="/PortalLeaveRequest/Index"><span class="glyphicon glyphicon-folder-close"></span>Portal Leave Request</a> </li>
+
+
+                    </ul>
+
+                </li>
+                <li class="xn-openable">
+                    <a href="#"><span class="fa fa-pencil-square-o"></span> <span class="xn-text">Reports</span></a>
+
+                    <ul class="navigation-scroll customScroll">
+                        <li>
+                            <a href="/ReportBuilder/Index"><span class="fa fa-desktop"></span>Report Builder</a>
+                        </li>
+                        <li>
+                        </li>
+                        <li><a href="/Reporting/LetterReport"><span class="fa fa-info-circle"></span>Letter Templates</a></li>
+
+                        <li>
+                            <a href="/Reporting/Index"><span class="fa fa-pencil-square-o"></span>All Reports</a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+            </ul>
+            <!-- END X-NAVIGATION -->
+        </div>
+        <!-- END PAGE SIDEBAR -->
+        <!-- PAGE CONTENT -->
+        <div class="page-content">
+            <!-- START X-NAVIGATION VERTICAL -->
+            <ul class="x-navigation x-navigation-horizontal x-navigation-panel">
+                <!-- TOGGLE NAVIGATION -->
+                <li class="xn-icon-button" id="LogoId">
+                    <a href="#" class="x-navigation-minimize"><span class="fa fa-dedent" id="CheckLogoId"></span></a>
+
+                </li>
+                <!-- END TOGGLE NAVIGATION -->
+                <!-- SEARCH -->
+                @*<li class="xn-search">
+                    <form role="form">
+                    <input type="text" name="search" placeholder="Search..." />
+                    </form>
+                    </li>*@
+                <!-- END SEARCH -->
+                <!-- POWER OFF -->
+                @*<li class="xn-icon-button pull-right">
+                        <a style="width:30px;"></a>
+                    </li>*@
+                <li class="xn-icon-button pull-right" id="btnShowProfileInfo">
+                    <a href="#" class="padding-0">
+                       
+                    </a>
+                    <div class="panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging" id="informer" style="z-index:4 !important;width:800%!important">
+                        <div class="panel-body" style="height: 875%;">
+                            <div class="col-sm-12 padding-0">
+                                <div class="col-sm-3 padding-0">
+                                    
+                                </div>
+                                <div class="col-sm-9" style="padding-left: 28px;">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer" style="line-height:380%;">
+                            
+
+                        </div>
+                    </div>
+                    @*<ul class="xn-drop-left animated zoomIn">
+                            <li><a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span> Sign Out</a></li>
+                        </ul>*@
+                </li>
+
+                @*<li class="pull-right " style="margin-top:15px;">
+                        <h3 style="color:white">
+                            <span id="SpnLoginName">
+                                @{
+
+                                    @Html.Raw(userContext.Name)
+
+
+                                }
+                            </span>
+                        </h3>
+                    </li>*@
+            </ul>
+
+            <div class="divBreadcrumb">
+                <div class="pull-left">
+                    @RenderSection("Breadcrumb", required: false)
+                </div>
+                <div class="pull-right">
+                    @*@if (!string.IsNullOrEmpty(Session["VesionDate"].ToString()))
+                    {
+                        @("V" + Session["VesionDate"].ToString());
+                    }*@
+
+                </div>
+            </div>
+            <!-- END X-NAVIGATION VERTICAL -->
+            <div class="page-content-wrap">
+                @RenderBody()
+            </div>
+
+        </div>
+        <!-- END PAGE CONTENT -->
+    </div>
+    <!-- END PAGE CONTAINER -->
+    <!-- MESSAGE BOX-->
+    <div class="message-box animated fadeIn" data-sound="alert" id="mb-signout">
+        <div class="mb-container">
+            <div class="mb-middle">
+                <div class="mb-title"><span class="fa fa-sign-out"></span> Log <strong>Out</strong> ?</div>
+                <div class="mb-content">
+                    <p>Are you sure you want to log out?</p>
+                    <p>Press No if you want to continue work. Press Yes to logout from current user.</p>
+                </div>
+                <div class="mb-footer">
+                    <div class="pull-right">
+                        <a href=# class="btn btn-success btn-lg">Yes</a>
+                        <button class="btn btn-default btn-lg mb-control-close">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MESSAGE BOX-->
+
+    <div class="modal" id="myModal3" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="modal_heading3"></h4>
+                </div>
+                <div class="modal-body">
+                    <div id="modal_Loader3"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="myModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="modal_heading"></h4>
+                </div>
+                <div class="modal-body">
+                    <div id="modal_Loader"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="addPaySalaryModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="addPaySalaryModal_heading"></h4>
+                </div>
+                <div class="modal-body">
+                    <div id="addPaySalaryModal_Loader"></div>
+                </div>
+                @*<div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>*@
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="myModal2" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="modal_heading2"></h4>
+                </div>
+                <div class="modal-body">
+                    <div id="modal_Loader2"></div>
+                </div>
+                @*<div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>*@
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="myModal1" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="modal_heading1"></h4>
+                </div>
+                <div class="modal-body">
+                    <div id="modal_Loader1"></div>
+                </div>
+                @*<div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>*@
+            </div>
+        </div>
+    </div>
+    <a target="_blank" href="#" id="hdnTempLink"></a>
+    @*<!-- START PRELOADS -->
+        <audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
+        <audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
+        <!-- END PRELOADS -->*@
+    <!-- START SCRIPTS -->
+    <!-- START PLUGINS -->
+    <script type="text/javascript" src="~/Content/assets/js/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="~/Content/assets/js/plugins/jquery/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="~/Content/assets/js/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/no-data-to-display.js"></script>
+    <script src="http://code.highcharts.com/modules/drilldown.js"></script>
+    <!-- END PLUGINS -->
+    <!-- START THIS PAGE PLUGINS-->
+    <script type='text/javascript' src='~/Content/assets/js/plugins/icheck/icheck.min.js'></script>
+    <script type="text/javascript" src="~/Content/assets/js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
+    <script type="text/javascript" src="~/Content/assets/js/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="~/Content/assets/js/plugins/scrolltotop/scrolltopcontrol.js"></script>
+
+    <script type="text/javascript" src="~/Content/assets/js/plugins/morris/raphael-min.js"></script>
+    <script type="text/javascript" src="~/Content/assets/js/plugins/morris/morris.min.js"></script>
+    <script type='text/javascript' src='~/Content/assets/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js'></script>
+    <script type='text/javascript' src='~/Content/assets/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js'></script>
+    <script type='text/javascript' src='~/Content/assets/js/plugins/bootstrap/bootstrap-datepicker.js'></script>
+    <script type="text/javascript" src="~/Content/assets/js/plugins/bootstrap/bootstrap-select.js"></script>
+    <script type="text/javascript" src="~/Content/assets/js/plugins/tagsinput/jquery.tagsinput.min.js"></script>
+    <script type="text/javascript" src="~/Content/assets/js/plugins/owl/owl.carousel.min.js"></script>
+
+    <script type="text/javascript" src="~/Content/assets/js/plugins/moment.min.js"></script>
+    <script type="text/javascript" src="~/Content/assets/js/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- END THIS PAGE PLUGINS-->
+    <script type='text/javascript' src='~/Content/assets/js/plugins/noty/jquery.noty.js'></script>
+    <script type='text/javascript' src='~/Content/assets/js/plugins/noty/layouts/topCenter.js'></script>
+    <script type='text/javascript' src='~/Content/assets/js/plugins/noty/layouts/topLeft.js'></script>
+    <script type='text/javascript' src='~/Content/assets/js/plugins/noty/layouts/topRight.js'></script>
+    <script type='text/javascript' src='~/Content/assets/js/plugins/noty/themes/default.js'></script>
+    <!-- START TEMPLATE -->
+    <script type="text/javascript" src="~/Content/assets/js/settings.js"></script>
+    <script type="text/javascript" src="~/Content/assets/js/plugins/smartwizard/jquery.smartWizard-2.0.min.js"></script>
+    <script type="text/javascript" src="~/Content/assets/js/plugins.js"></script>
+    <script type="text/javascript" src="~/Content/assets/js/actions.js"></script>
+
+    @*@Scripts.Render("~/bundles/jquery")*@
+    <script src="~/Scripts/Custom/jquery.blockUI.js" type="text/javascript"></script>
+    <script type="text/javascript" src="~/Scripts/Custom/Global.js"></script>
+
+    @*@Scripts.Render("~/bundles/bootstrap")*@
+
+    <link href="~/Content/Messagebox.css" rel="stylesheet" />
+    <script src="~/Scripts/messagebox.js"></script>
+
+    @RenderSection("scripts", required: false)
+    <script>
+        $(document).ready(function () {
+            var url = window.location.pathname;
+            $(".page-sidebar").removeClass("page-sidebar-fixed").removeClass("scroll");
+
+            $("#LogoId .x-navigation-minimize").click(function () {
+                if ($("#CheckLogoId").hasClass("fa-dedent")) {
+                    $("#SmallLogoViewID").hide();
+                    $("#LargeLogoViewID").show();
+                }
+                else if ($("#CheckLogoId").hasClass("fa-indent")) {
+                    $("#LargeLogoViewID").hide();
+                    $("#SmallLogoViewID").show();
+                }
+            });
+        });
+
+   
+
+    </script>
+
+    <!-- END TEMPLATE -->
+    <!-- END SCRIPTS -->
+
+</body>
+</html>

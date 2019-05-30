@@ -1,0 +1,369 @@
+@media all  and (min-width:600px) and (max-width:767px){
+.wrapper{background-size:100% auto;}
+.container{width:96%;}
+.home .container{width:96%;}
+
+.header .logo {padding: 0 15px 0 10px; width: 22%;}
+.after-login .menu-nav{display:none;}
+#nav-trigger {display: block; position:absolute; right: 196px; top: 38px;}
+.agent-login #nav-trigger {right: 334px;top: 38px;}
+#menu-nav-tab{display: block; margin:79px 0 0 0; z-index:1010;}
+#menu-nav-tab ul{box-shadow:none;}
+#menu-nav-tab li a{padding: 7px 30px; font-size: 12px;}
+#menu-nav-tab li ul{position: static;}
+.sub-menu.expanded li:first-child { border-top: 1px solid #033346;}
+#menu-nav-tab li ul li a{padding: 7px 60px; font-size: 12px;}
+#menu-nav-tab li em{background:#ec2b2b; padding:1px 6px 1px 3px; margin-left:5px; position: static;}
+
+.after-login .nav .user-login {padding: 10px 0;}
+.after-login .header .nav li:nth-child(3){clear:both; margin-left: 210px;}
+.agent-login .header .nav li:nth-child(3){clear:both; margin-left: 70px;}
+.after-login .header .nav li a{width:70px; font-size:12px; padding: 12px 9px;}
+.directory {padding:12px 15px !important;}
+.after-login .menu-nav li{margin:3px 2px 0;}
+.after-login .menu-nav li a{padding:13px 18px;}
+.bottom-text {width: 96%;}
+
+.inner-main-content{padding:10px; margin-bottom: 95px;}
+/*.after-login .inner-main-content{margin-bottom:40px;}*/
+.half-width{width: 45%;}
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-draggable.ui-resizable.forgot-pass {width:60% !important;}
+.half-width.forgetPass{width:80%;}
+.half-width.forgetPass input{width:80%;}
+.half-width-inner{width: 46%;}
+.half-width-inner label {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;  font-size:11px; text-indent:4px;}
+#selfContained input.radio[type="radio"] + label.radio-label{ margin-right: 8px;}
+.half-width select {width: 98.6%;}
+.half-width span.select {width: 98.6%; font-size:11px;}
+.half-width-inner select{width:100%;}
+.half-width-inner span.select{width:100%;}
+.half-width-inner input[type="text"], .half-width-inner input[type="email"], .half-width-inner input[type="password"]{width: 88%;}
+.half-width .LocChkList{width: 98.8%;}
+.half-width .btn.create-btn{width: 110px;}
+#AddListing .half-width-inner{ width: 47%;}
+.agent-from .half-width .LocChkList{width: 97%;}
+.city, .city-code{width:45%;}
+.full-width .btn.create-btn{margin-top:8px;}
+/*.half-width-inner .errorDiv{top:-18px;}*/
+.errormannual{font-size: 11px;}
+#editview .full-width .btn-group{padding: 0; text-align: left;}
+
+label {font-size:11px;}
+input, textarea{font-size:11px;}
+select{font-size: 11px; height: 29px; line-height: 29px;}
+span.select{background-position:99% center; text-indent: 4px;}
+.select {font-size:11px;}
+table{font-size:11px;}
+.associationId span{font-size:11px;}
+
+/*home page*/
+.section .section-inner .main-content{margin: 40px 0 20px;}
+.section .section-inner .main-content h2{font-size:40px; /*text-shadow: 1px 1px 2px #333;*/}
+.section .section-inner .main-content p{font-size:40px; line-height:40px; /*text-shadow: 1px 1px 2px #333;*/}
+.section .section-inner .steps{margin: 50px auto; width:500px; display:block;}
+.section .section-inner .steps ul{background:none; width: 80%;}
+.section .section-inner .steps ul li{min-height:170px;}
+.section .section-inner .steps ul li:nth-child(2){background:url('../images/line.png') top right no-repeat; padding-right:40px;}
+.section .section-inner .steps ul li:nth-child(4){background:url('../images/line.png') top right no-repeat; padding-right:40px;}
+.section .section-inner .steps ul li:nth-child(2n+3){clear:both;}
+.section .section-inner .steps ul li p{margin: 5px 15px; /*padding: 0 0 0 30px;*/}
+/*home page*/
+
+/*agent-registration*/
+.heading{margin:10px 0px;}
+/*.from-section input, textarea{width:94%;}*/
+.from-section{padding-left: 55px;}
+.from-section ul{width:100%;}
+.from-section ul.left-sec{margin-right: 20px;}
+/*.agent-from.from-section input[type="text"]{margin-bottom:13px;}*/ 
+.datepicker-sec .picker-sec input[type="text"]{width:96%;}
+/*.file_upload{width:65%;} 
+.file_upload:before{width:65%;}
+.file_upload input{padding: 9px 5px;}*/ 
+
+
+.from-section.agent-from input {width: 88%;}
+.from-section.agent-from select {width: 94%;}
+.from-section.agent-from span.select {width: 94%;}
+.from-section.agent-from .datepicker-sec .picker-sec input[type="text"] { width: 88%;}
+.from-section.agent-from .LocChkList { width: 94.2%;}
+
+
+.my-profile .from-section.agent-from input {width: 88%;}
+.my-profile .from-section.agent-from .select {width: 94.3%;}
+.my-profile .from-section.agent-from span.select { width: 94.4%;}
+
+.datepicker-sec .cons-sec{width:50%; margin-right:4%;}
+.datepicker-sec .cons-sec input{width:84%;}
+.datepicker-sec .picker-sec{width:100%;}
+
+.datepicker-sec .picker-sec .datepicker .ui-datepicker-trigger{height: 18px; margin: 6px 0 5px 3px;}
+/*.landline-sec .codes{margin: 0 3.3% 0 0; width: 20%;}*/
+.landline-sec .mobile_no{width: 62%;}
+.membership-location{clear:both;}
+.membership-location ul{width:100%;}
+.from-section .membership-location li{margin-right: 25px; width:44%;}
+.btn-group{padding:0 40px;}
+.btn-group .btn{width:110px;}
+.full-width .btn.create-btn{ margin-left: 5px; padding: 5px; width: 80px;}
+.agent-from span.select {width: 96%;}
+.agent-from .select {width: 96%;}
+/*agent-registration*/
+
+.btn-export .expo-btn{font-size: 13px; padding-left: 25px;}
+
+/*.city input, .city-code input{width:93%;}*/
+
+/*.title span a{font-size:12px; padding: 9px 12px;}
+.my-listing .top-content{overflow-x: scroll; width: 100%;}
+.listing-table ul{ min-width: 768px; width: 100%;}*/
+
+/*.grid{overflow-x:scroll;}*/
+
+/*my requirment*/
+.title span a {font-size: 12px; line-height: 34px; padding: 8px 12px;}
+.slider{width: 94.5%;}
+/*my requirment*/
+
+/*my profile*/
+/*.my-profile .from-section span.select {width: 91.2%;}
+.my-profile .from-section .select {width: 91.2%;}*/
+.my-profile .datepicker-sec .picker-sec input[type="text"]{width:92%;}
+.my-profile .agent-password-from { width: 89%;}
+.custom_file_upload .file_upload{width: 92%;}
+.custom_file_upload .file_upload:before{width: 92%; font-size:12px;}
+.my-profile .landline-sec .mobile_no { width: 53% !important;}
+.landline-sec .codes{margin: 0 7px 0 0;}
+.my-profile .btn-group{padding:0 58px;}
+.my-profile .btn-group .btn{width:101px;}
+.my-profile .LocChkList {width: 91.2%;}
+/*my profile*/
+
+/*footer*/
+.footer{font-size: 11px;}
+.footer p{font-size: 11px;}
+.footer ul.f-menu{margin: 0 5px;}
+.footer ul.f-menu li{padding: 0 10px;}
+/*.footer ul.social-icon li:nth-child(1){margin:0 10px 0 0; padding: 0 5px;}*/
+
+/*footer*/
+
+.city-main{}
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-draggable.ui-resizable{width:80% !important;}
+#gbox_tblGridList td input[type="button"]{font-size:10px;}
+.ui-datepicker{ width: 15.6em !important;}
+#dialogConfirm {height: 20.267px !important;}
+#tickimage, #crossimage { height: 12px; width: 12px;}
+
+.OfficeSTDCode {width: 26%;}
+    .OfficeNumber {width:62%;
+    }
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-resizable{width:80% !important;}
+.OfficeSTDCode .errorDiv {left: -12px;}
+.OfficeNumber .errorDiv {right: -30px;}
+.ui-dialog .top-content li label{font-size: 11px;}
+.activateDialog .city-main ul li .picker-sec .city-code .datepicker .ui-datepicker-trigger{height: 20px; margin: 4px 10px;}
+#dialogConfirm {height: 20.267px !important;}
+
+#prefferedLocations .left-blk {
+    width: 100%;
+}
+#prefferedLocations .right-blk {
+    width: 100%;
+}
+#prefferedLocations .half-width .LocChkList {
+    height: 160px;
+}
+    #prefferedLocations .right-blk .errorDivCheckBox{
+         bottom: 181px !important;
+    }
+
+    /*.divLeft    { width:100%;}
+.divRight   { width:90%;}  */
+.divRight ul li{width: 100%;}
+.paragraph	{ padding-left: 55px;}
+.iframDiv	{ margin-left: 53px}
+
+
+.mission-heading.paragraph {padding-left:0px; display: inline-block; width: 99%;}
+.paragraph h2.mission {font-size: 20px;}
+.help-text{font-size:14px;}
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-dialog-buttons.ui-resizable{left: 10% !important;}
+.user-profile ul li label{font-size: 11px;}
+.user-profile ul li p{font-size: 11px;}
+.listing-view .content ul li label{font-size: 11px;}
+.listing-view .content ul li p{font-size: 11px;}
+.req-view .content ul li label{font-size: 11px;}
+.req-view .content ul li p{font-size: 11px;}
+.city input, .city-code input{width:94%;}
+}
+
+
+
+@media all  and (min-width:768px) and (max-width:1024px){
+.wrapper{background-size:100% auto;}
+.container{width:96%;}
+.home .container{width:96%;}
+
+.header .logo{padding:0 15px 0 10px; width: 17%;}
+.after-login .menu-nav{display:none;}
+#nav-trigger {display: block; position:absolute; right: 255px; top: 36px;}
+.agent-login #nav-trigger {right: 412px; top: 36px;}
+
+#menu-nav-tab{display: block; margin:77px 0 0 0; z-index: 1010;}
+#menu-nav-tab ul{box-shadow:none;}
+#menu-nav-tab li a{padding: 9px 30px; font-size: 12px;}
+#menu-nav-tab li ul{position: static;}
+.sub-menu.expanded li:first-child { border-top: 1px solid #033346;}
+#menu-nav-tab li ul li a{padding: 9px 60px; font-size: 12px;}
+#menu-nav-tab li em{background:#ec2b2b; padding:1px 6px 1px 3px; margin-left:5px; position: static;}
+
+input, textarea {font-size:11px;}
+span.select{background-position:99% center; text-indent: 4px; font-size:11px;}
+.select{font-size:11px;}
+label {font-size:11px;}
+.half-width-inner label {overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size:11px; text-indent:4px;}
+.half-width{width:45%;}
+.inner-main-content{ margin-bottom: 75px; padding: 10px;}
+.city, .city-code{width:45%; float:left;}
+.full-width .btn.create-btn{margin-top:8px;}
+.full-width .city-code .btn.create-btn{margin-top:25px;}
+/*.half-width-inner .errorDiv{top:-18px;}*/
+table{font-size:11px;}
+.errormannual{font-size:11px;}
+#editview .full-width .btn-group{padding: 0; text-align: left;}
+.associationId span{font-size:11px;}
+
+.after-login .header .nav li:nth-child(3){clear:both; margin-left: 187px;}
+.agent-login .header .nav li:nth-child(3){clear:both; margin-left: 32px;}
+.after-login .menu-nav li{margin:3px 2px 0;}
+.after-login .menu-nav li a{padding:13px 18px;}
+.bottom-text {width: 96%;}
+
+/*home page*/
+.section .section-inner .steps{margin: 50px auto; width:700px; display:block;}
+.section .section-inner .steps ul{width:100%;}
+.section .section-inner .steps ul li{width:164px;}
+.section .section-inner .steps ul li p{margin: 5px; font-size:12px;}
+/*home page*/
+.full-width .btn.create-btn {margin-left: 5px; padding:5px 7px; width: 105px;}
+.btn.create-btn {margin-left:0;}
+/*agent-registration*/
+.heading{margin: 15px}
+/*.from-section input, textarea{width:95%;}*/
+.from-section{padding-left: 70px;}
+
+.from-section ul.left-sec{margin-right: 20px;}
+.from-section .membership-location li textarea{width:97%;}
+/*.file_upload{width:47%;}
+.file_upload:before{width:47%;}
+.file_upload input{padding: 9px 5px;}*/
+.datepicker-sec .cons-sec{width:50%; margin-right:4%;}
+.datepicker-sec .cons-sec input{width:84%;}
+.datepicker-sec .picker-sec{width:100%;}
+.datepicker-sec .picker-sec input[type="text"] {width: 96%;}
+.datepicker-sec .picker-sec .datepicker .ui-datepicker-trigger{margin: 3px 0 5px 5px;}
+/*.landline-sec .codes{margin: 0 3.3% 0 0; width: 20%;}
+.landline-sec .mobile_no{width: 65.2%;}*/
+.membership-location{clear:both;}
+.membership-location ul{width:100%;}
+.from-section .membership-location li{margin-right: 25px; width:44%;}
+/*.btn-group{padding:0 7%;}*/
+.agent-from span.select {width: 96%;}
+.agent-from .select {width: 96%;}
+/*agent-registration*/
+
+/*my profile*/
+.my-profile .datepicker-sec .picker-sec input[type="text"] {width: 92%;}
+/*.my-profile .from-section .select {width: 91.2%;}
+.my-profile .from-section span.select {width: 91.2%;}*/
+.custom_file_upload .file_upload:before{width:91.4%;}
+.custom_file_upload .file_upload{width:91.4%;}
+.my-profile .agent-password-from { width: 89%;}
+.my-profile .landline-sec .mobile_no { width: 59% !important;}
+/*my profile*/
+
+
+.from-section.agent-from input {width: 88%;}
+.from-section.agent-from select {width: 93%;}
+.from-section.agent-from span.select {width: 93%;}
+.from-section.agent-from .datepicker-sec .picker-sec input[type="text"] { width: 88%;}
+.from-section.agent-from .LocChkList { width: 93.2%;}
+.my-profile .from-section.agent-from input {width: 88%;}
+.my-profile .from-section.agent-from .select {width: 93%;}
+.my-profile .from-section.agent-from span.select { width: 93%;}
+
+
+.add-listing input[type="text"], .add-listing input[type="email"], .add-listing input[type="password"] {width: 91.2%;}
+.city input, .city-code input{width:95%;}
+.btn-group .btn{width:23%;}
+
+
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-draggable{width:80% !important;}
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-draggable.ui-resizable.forgot-pass {width:40% !important;}
+.half-width.forgetPass{width:80%;}
+.half-width.forgetPass input{width:80%;}
+#gbox_tblGridList td input[type="button"]{font-size:11px;}
+
+#tickimage, #crossimage {
+    height: 12px;
+    width: 12px;
+}
+
+.OfficeSTDCode {width: 23%;}
+    .OfficeNumber {width:66%;
+    }
+    .ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-resizable{width:80% !important;}
+
+#prefferedLocations .left-blk {width: 40%;}
+#prefferedLocations .right-blk {width: 54%;}
+#prefferedLocations .half-width .LocChkList div .Locationcheckbox {display: inline-block; width: 49%;}
+.commonChkbox {width:49%; display:inline-block;}
+.from-section.agent-from #prefferedLocations .LocChkList {width: 97%;}
+
+.paragraph	{padding-left: 68px; width: 91%;}
+.iframDiv   { margin-left: 70px;}
+.divRight ul li {width: 90%;}   
+
+.mission-heading.paragraph {padding-left:13px; display: inline-block; width: 99%;}
+}
+
+/*
+@media all and (min-width:1024px){
+
+}*/
+@media all  and (min-width:980px) and (max-width:1024px){
+.after-login .menu-nav{display:block; padding-right: 5px;}
+.after-login .menu-nav li a {padding: 13px 10px;}
+.header .menu-nav li:hover ul.sub-menu {width:180px;}
+.after-login .header .nav li:nth-child(3) {clear: none; margin-left: 0;}
+#nav-trigger {display: none;}
+#menu-nav-tab{display:none;}
+
+input, textarea {font-size:12px;}
+span.select{font-size:12px;}
+.select{font-size:12px;}
+label {font-size:12px;}
+.half-width-inner label {overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size:12px; text-indent:4px;}
+table{font-size:12px;}
+.errormannual{font-size:12px;}
+.associationId span{font-size:12px;}
+.after-login .nav .user-login {width: 170px;}
+.select{width:95.7%;}
+span.select{width:95%;}
+.half-width-inner span.select{width: 98.5%;}
+.from-section.agent-from .one-third-width span.select{width: 93.5%;}
+.from-section.agent-from .one-third-width select{width: 94.5%;}
+.my-profile .from-section.agent-from .select{width: 92%;}
+.my-profile .from-section.agent-from span.select{width: 92%;}
+.half-width .LocChkList{width: 95%;}
+.city-main .half-width .LocChkList{width: 98.3%;}
+.from-section.agent-from .LocChkList{width: 92%;}
+.EditLocChkList{width:98.3%;}
+.top-content .city-main ul li .full-width .city select{width: 99%;}
+.top-content .city-main ul li .full-width .city span.select{width: 98.5%;}
+.city-master-inner .city-main .half-width select{width: 99% !important;}
+.city-master-inner .city-main .half-width span.select{ width: 98.5%;}
+
+.paragraph {width: 93%;}
+}

@@ -1,0 +1,1150 @@
+﻿.push-down-padding {
+    padding-top: 25px;
+}
+
+.padding-side {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.padding-left-0 {
+    padding-left: 0px !important;
+}
+
+.padding-right-0 {
+    padding-right: 0px !important;
+}
+
+.padding-up-item {
+    padding-top: 10px !important;
+}
+
+.padding-down-item {
+    padding-bottom: 10px !important;
+}
+
+.padding-left-item {
+    padding-left: 10px !important;
+}
+
+.padding-right-item {
+    padding-right: 10px !important;
+}
+
+.padding-down-btn {
+    padding-top: 21px;
+}
+
+.select-padding {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.equalCol-5 {
+    width: 20%;
+}
+
+fieldset {
+    border: 1px solid #f5f5f5 !important;
+    padding: 10px;
+    margin: 0 0 15px 0 !important;
+    -webkit-box-shadow: 0px 0px 0px 0px #000;
+    box-shadow: 0px 0px 0px 0px #000;
+}
+
+.different-section {
+    min-height: 150px;
+}
+
+.default-Height {
+    min-height: 500px;
+}
+
+
+span.filter-option {
+    font-weight: normal !important;
+}
+
+.btn-middleIcon {
+    padding-top: 3px !important;
+    padding-bottom: 1px !important;
+}
+
+.icon-middle {
+    top: 3px;
+    left: 3px;
+}
+
+.bootstrap-select .dropdown-menu {
+    /*max-height: 300px !important;*/
+    overflow-x: hidden !important;
+}
+
+.bootstrap-select.btn-group .dropdown-menu.inner {
+    max-height: 225px !important;
+}
+
+.font-Bold {
+    font-weight: bold !important;
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+.cursor-disabled {
+    cursor: not-allowed;
+}
+
+.widget-docno {
+    font-size: 16PX;
+}
+
+.widget-doc-type {
+    font-size: 32px;
+    color: #337ab7;
+}
+
+.width-1500 {
+    width: 1500px;
+}
+
+.table-Height {
+    max-height: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #DDD;
+}
+
+.highlightRow {
+    background-color: #D6DFFB !important;
+}
+
+.dataTables_paginate span > span {
+    display: none;
+}
+
+.panel-maxHeight-200 {
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
+    color: #262626;
+    text-decoration: none;
+    background-color: #f5f5f5;
+    outline: 0;
+}
+
+.dropdown-menu.inner.selectpicker > li:first-child {
+    background-color: #f5f5f5;
+}
+
+.dropdown-menu > li > a:focus {
+    background-color: none;
+}
+
+.contacts-title-emplist {
+    line-height: 27px !important;
+}
+
+.list-group-controls-emplist {
+    float: right;
+}
+
+
+
+select.selectpicker, select.selectpickerddl {
+    display: block !important;
+    float: left;
+    overflow: hidden;
+    height: 1px;
+    width: 0px !important;
+    border: 0;
+    padding: 0;
+    box-shadow: none;
+    color: white;
+}
+
+.input-group .btn.dropdown-toggle.selectpicker.btn-default {
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.hintText {
+    color: #555;
+    padding-left: 2px;
+    font-size: 13px;
+}
+
+.dropdownHide .form-control {
+    z-index: inherit;
+}
+
+.divOverFlow {
+    overflow: auto;
+}
+
+.multi-Select > .btn-group, .btn-group > .multiselect {
+    width: 100%;
+}
+
+.user_group_emplist {
+    line-height: 16px;
+}
+
+.list-Group-item > li:hover {
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+
+.user_group_emplist label {
+    margin-bottom: 0px;
+}
+
+list-Group-item > li, .list-Group-item > li > label {
+    cursor: pointer;
+}
+
+.report-container {
+    min-height: 300px !important;
+}
+
+    .report-container .stiMvcViewerPageShadow {
+        min-height: 972px !important;
+        max-height: 1200px !important;
+        height: inherit !important;
+    }
+
+    .report-container-common .stiMvcViewerProcessImage, .report-container .stiMvcViewerProcessImage {
+        left: 45% !important;
+    }
+
+
+    .report-container .stiMvcViewerMenu table tbody tr td {
+        font-size: 12px !important;
+    }
+
+    .report-container .stiMvcViewerClearAllStyles {
+        font-size: 12px !important;
+    }
+
+.text-Primary-label {
+    color: #337ab7;
+}
+/*.stiMvcViewerReportPanel {
+        min-height: 500px !important;
+
+    }*/
+
+
+/*Newly Added from All Pages*/
+.emplist {
+    max-height: 341px;
+    overflow: auto;
+}
+
+.Scroll-MonthlyReport {
+    width: 1800px;
+}
+
+
+.bootstrap-timepicker-widget {
+    z-index: 1000000;
+}
+
+.icon-Export {
+    font-size: 30px;
+}
+
+.enableScroll {
+    border: #999999 solid 1px;
+    padding: 15px;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: scroll;
+    float: left;
+}
+
+.divSaveBtn {
+    position: relative;
+    float: left;
+    height: 200px;
+    margin: 0 10px;
+}
+
+.spanSaveBtn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/*Home/Index.cshtml*/
+.highcharts-button {
+    display: none;
+}
+
+.panel-fullscreen-wrap {
+    z-index: 3;
+}
+
+/*h3.panel-title {
+        font-weight: bold !important;
+    }*/
+#tblAttendance tr th:nth-child(2), #tblAttendance tr td:nth-child(2) {
+    text-align: center;
+}
+
+div#EmpNationalities .panel-title {
+    margin-left: 0 !important;
+}
+
+div#timeWidget {
+    padding: 25px 0;
+}
+
+/*Payroll/Index*/
+
+.scroll-tbl_payroll {
+    float: left;
+    height: 432px;
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+/*Department Employee List*/
+.employeeViewPopOver .employeelistView {
+    height: 200px;
+    background-color: whitesmoke;
+    border: solid 1px black;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+.employeeViewPopOver .employeeliListDepartment {
+    margin-bottom: 5px;
+    padding-left: 0px !important;
+}
+
+.employeeViewPopOver .ulEmployeeList {
+    list-style: none;
+    padding: 5px;
+    font: bold;
+}
+
+.employeeViewPopOver .form-group {
+    margin-bottom: 30px;
+}
+
+/*_getAllDepartmentEmployees*/
+.liemployeeindepartment {
+    margin-bottom: 5px;
+    padding-left: 0px !important;
+}
+
+.edit-name {
+    padding-left: 0px !important;
+}
+
+/*Report Builder*/
+.Report-list-controls {
+    top: 6px !important;
+}
+
+.SavedReports {
+    height: 312px;
+    overflow: auto;
+}
+
+.WhereConditions {
+    height: 200px;
+    overflow: auto;
+}
+
+.SelectedFields {
+    height: 350px;
+    overflow: auto;
+}
+
+.reportFieldsList {
+    max-height: 300px;
+    overflow: auto;
+}
+
+.LetterTemplatesList {
+    max-height: 120px;
+    overflow: auto;
+}
+
+.stiMvcViewerReportPanel {
+    min-height: 500px !important;
+}
+
+/*WPS/Index*/
+
+.wps-panel-height {
+    height: 350px;
+    overflow: auto;
+}
+/*viewEmployeeProfile/Index*/
+
+.viewProfile .nav-tabs > li.active > a {
+    background-color: #3A5795 !important;
+    border-top: 0px !important;
+    color: white !important;
+}
+
+.viewProfile .nav-tabs, .viewProfile .nav-tabs.nav-justified {
+    padding: 0px !important;
+}
+
+.tableSpokenLanguages label, #ContactInformation table label {
+    margin-bottom: 0 !important;
+    padding-right: 5px;
+}
+/*UserRole/Add And /Edit*/
+#tblPermissions input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/*UserGroup/_GroupEmployeeList*/
+div#divEmpList {
+    height: 330px;
+    overflow-y: auto;
+}
+
+#divEmpList ul.empchklist {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+/*Salary Information/Index*/
+.tableButton {
+    background: none;
+    border: none;
+}
+
+.lblValidAmount {
+    display: none;
+    color: rgb(255, 56, 56);
+}
+/*SalaryInformation/_paySalaryList*/
+#txtNotes {
+    resize: none;
+}
+
+/*commaon CSS*/
+.alinMiddle {
+    margin-top: 4px;
+}
+
+/*Letter Report & report Builder*/
+#reportBuilderDiv .dd-item, .dd-empty, .dd-placeholder,
+#letterReportDiv .dd-item, .dd-empty, .dd-placeholder {
+    margin: -1px !important;
+}
+
+#reportBuilderDiv .dd-handle,
+#letterReportDiv .dd-handle {
+    background: none !important;
+    border: none !important;
+}
+
+#reportBuilderDiv .li.dd-item,
+#letterReportDiv .li.dd-item {
+    cursor: pointer;
+}
+
+/*Multi Select DDL*/
+.multiddl > .btn-group button {
+    text-align: left !important;
+    background-color: #f9f9f9 !important;
+    border-color: #999999 !important;
+    color: #555 !important;
+    font-weight: normal !important;
+    border-radius: 3px !important;
+}
+
+.multiselect-clear-filter {
+    width: 30px !important;
+    padding: 4px 6px !important;
+}
+
+.multiddl span.btn-primary {
+    position: absolute !important;
+    width: 36px;
+    height: 30px;
+    border-radius: 3px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+
+.multiddl .btn-primary {
+    margin-bottom: 0 !important;
+}
+
+
+
+
+/*Shift/Index*/
+#Div_Shift li.active {
+    background-color: #F8FAFC;
+}
+
+.ui-timepicker-wrapper {
+    overflow-y: auto;
+    height: 150px;
+    width: 6.5em;
+    background: #fff;
+    border: 1px solid #ddd;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    outline: none;
+    z-index: 10001;
+    margin: 0;
+}
+
+    .ui-timepicker-wrapper.ui-timepicker-with-duration {
+        width: 13em;
+    }
+
+        .ui-timepicker-wrapper.ui-timepicker-with-duration.ui-timepicker-step-30,
+        .ui-timepicker-wrapper.ui-timepicker-with-duration.ui-timepicker-step-60 {
+            width: 11em;
+        }
+
+.ui-timepicker-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ui-timepicker-duration {
+    margin-left: 5px;
+    color: #888;
+}
+
+.ui-timepicker-list:hover .ui-timepicker-duration {
+    color: #888;
+}
+
+.ui-timepicker-list li {
+    padding: 3px 0 3px 5px;
+    cursor: pointer;
+    white-space: nowrap;
+    color: #000;
+    list-style: none;
+    margin: 0;
+}
+
+.ui-timepicker-list:hover .ui-timepicker-selected {
+    background: #fff;
+    color: #000;
+}
+
+li.ui-timepicker-selected,
+.ui-timepicker-list li:hover,
+.ui-timepicker-list .ui-timepicker-selected:hover {
+    background: #1980EC;
+    color: #fff;
+}
+
+    li.ui-timepicker-selected .ui-timepicker-duration,
+    .ui-timepicker-list li:hover .ui-timepicker-duration {
+        color: #ccc;
+    }
+
+.ui-timepicker-list li.ui-timepicker-disabled,
+.ui-timepicker-list li.ui-timepicker-disabled:hover,
+.ui-timepicker-list li.ui-timepicker-selected.ui-timepicker-disabled {
+    color: #888;
+    cursor: default;
+}
+
+    .ui-timepicker-list li.ui-timepicker-disabled:hover,
+    .ui-timepicker-list li.ui-timepicker-selected.ui-timepicker-disabled {
+        background: #f2f2f2;
+    }
+
+
+.fixed-ColumnWidth {
+    width: 20% !important;
+    overflow-x: auto;
+}
+
+.vertical-Middle {
+    vertical-align: middle !important;
+}
+
+.pull-right-lg {
+    float: right;
+}
+
+.x-navigation .x-navigation-control:hover {
+    background: #3d4e5d;
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .pull-right-lg {
+        float: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .pull-right-lg {
+        float: none;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .pull-right-lg {
+        float: none;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 599px) {
+    .pull-right-lg {
+        float: none;
+    }
+}
+
+.green {
+    color: #649a0b;
+}
+
+.red {
+    color: #d9534f;
+}
+
+.bootstrap-select.btn-group .btn .filter-option {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.input-group-ddl {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.input-group-span {
+    width: 36px;
+}
+
+.EmpInfoDiv {
+    height: 350px;
+    overflow-x: hidden;
+}
+
+.label-text {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.label-form {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th,
+.table > tfoot > tr > td, .table > tfoot > tr > th,
+.table > thead > tr > td, .table > thead > tr > th {
+    vertical-align: middle;
+}
+
+.custom-margin {
+    margin-bottom: 2px;
+}
+
+.margin-right {
+    margin-right: 5px;
+}
+
+#jsTreeMainDiv .jstree-default .jstree-themeicon {
+    display: none !important;
+}
+
+#jsTreeMainDiv a {
+    font-size: 14px;
+}
+
+#jsTreeMainDiv .fa {
+    color: #3a5795;
+    font-size: 18px;
+    margin-right: 6px;
+    margin-left: 0px;
+}
+
+.input-group a:focus, .input-group a:hover {
+    text-decoration: none;
+}
+
+.list-group-item-condensed {
+    padding-bottom: 2px !important;
+    padding-top: 2px !important;
+}
+
+#messagebox {
+    width: 400px !important;
+}
+
+.tooltip-inner {
+    white-space: pre-wrap;
+    text-align: left;
+}
+
+.radio-label {
+    padding-top: 6px;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li > a {
+    white-space: normal;
+}
+
+.profile-photo {
+    width: 100%;
+    height: 250px;
+}
+
+.customwizard > ul li {
+    width: 25% !important;
+}
+
+.panel-controls li a {
+    /*background-color:#3a5795;*/
+}
+
+    .panel-controls li a span {
+        color: #3a5795;
+        padding-top: 2px;
+    }
+
+.btnadd {
+    border-color: #3a5795 !important;
+}
+
+.legend-border {
+    width: inherit; /* Or auto */
+    padding: 0 10px; /* To give a bit of padding on the left and right */
+    border-bottom: none;
+    margin-bottom: 0px;
+}
+
+.fieldset-Section {
+    padding: .35em .625em .75em;
+    margin: -15px 2px !important;
+    border: 1px solid silver !important;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.checkBox-label input[type=checkbox] {
+    margin-top: 0px;
+    margin-left: 14px;
+}
+
+.table-fixed-width {
+    table-layout: fixed;
+}
+
+.required-field {
+    font-size: 12px;
+    color: red;
+}
+
+.form-control[disabled], .form-control[readonly] {
+    color: black;
+}
+
+.alert-warning {
+    font-size: 13px;
+}
+
+.custom-alert {
+    padding: 10px;
+}
+
+.div-center {
+    margin: 0 auto;
+    width: 24%;
+}
+
+.filter-icon {
+    width: 25px;
+    height: 25px;
+    color: #3A5795;
+    border: 2px solid #3A5795;
+    line-height: 25px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 0px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 20px;
+    margin-top: 2px;
+}
+
+.popover-title {
+    line-height: 30px;
+}
+
+    .popover-title .panel-controls {
+        margin-top: 1px;
+    }
+
+.customfont-size {
+    font-size: 10px;
+}
+
+/* Track */
+.navigation-scroll {
+    max-height: 600px !important;
+    overflow-y: auto !important;
+}
+
+.customScroll::-webkit-scrollbar {
+    width: 4px;
+}
+
+.customScroll::-webkit-scrollbar-track {
+    background-color: #3A5795;
+}
+
+/* Handle */
+.customScroll::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.4);
+    border-radius: 10px;
+}
+
+    /* Handle on hover */
+    .customScroll::-webkit-scrollbar-thumb:hover {
+        background: black;
+    }
+
+.information-icon.fa-info-circle {
+    font-size: 16px;
+}
+
+.modal {
+    overflow: auto !important;
+}
+
+.btn.btn-rounded.btn-success:hover {
+    background-color: #89ad4d;
+    color: #ffffff;
+}
+
+.btn.btn-rounded.btn-danger:hover {
+    background-color: #b64645;
+    color: #ffffff;
+}
+
+.btn.btn-rounded.btn-warning:hover {
+    background-color: #fea223;
+    color: #ffffff;
+}
+
+.btn.btn-rounded.btn-default:hover {
+    background-color: #CCCCCC;
+    color: #ffffff;
+}
+
+.btn.btn-rounded.btn-primary:hover {
+    background-color: #29343f;
+    color: #ffffff;
+}
+
+.panel-controls li a:hover, .panel-controls li a:hover span {
+    background-color: #3a5795;
+    color: #ffffff;
+}
+
+.btn.btn-condensed.btn-sm {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+}
+
+.btn.btn-rounded.btn-info:hover {
+    color: #ffffff;
+    background-color: #16b3e8;
+}
+/*Graph viewer*/
+.GraphViewerReportPanel table, .GraphViewerReportPanel td {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+}
+
+.schoolNameEn {
+    color: #4472C4;
+    Font: bold 16pt Arial;
+    border: 0px;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 1.15em;
+    padding-bottom: 2px;
+}
+
+.schoolNameAr {
+    color: #4472C4;
+    Font: bold 16pt Arial;
+    border: 0px;
+    text-align: right;
+    vertical-align: bottom;
+    line-height: 1.15em;
+    padding-bottom: 2px;
+}
+
+.SchoolLogo {
+    Font: 8pt Arial;
+    border: 0px;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 1.15em;
+    word-wrap: break-word;
+}
+
+.EnglishHeader {
+    Font: 11pt Arial;
+    border: 0px;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 1.15em;
+    word-wrap: break-word;
+    padding-bottom: 2px;
+}
+
+.ArabicHeader {
+    Font: 11pt Arial;
+    border: 0px;
+    text-align: right;
+    vertical-align: middle;
+    line-height: 1.15em;
+    word-wrap: break-word;
+    padding-bottom: 2px;
+}
+
+.graphViewerMainPanel {
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.graphViewerToolBarTable {
+    cursor: default;
+    font-size: 12px;
+    border: 1px solid #c6c6c6;
+    background: #ffffff;
+    width: 100%;
+    border-collapse: separate;
+    color: #202020;
+}
+
+.graphViewerClearAllStyles {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.graphViewerStandartSmallButtonDefault :hover {
+    background: #d5e1f2;
+}
+
+.chkSelectShift {
+    margin: 9px 0 0 0;
+}
+
+.chkShiftBorder {
+    border-right: 1px solid #E5E5E5;
+    border-left: 1px solid #E5E5E5;
+}
+
+.shiftList {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.list-group-contacts .list-group-item.active {
+    background-color: #edf7fc !important;
+}
+
+.preview-frame-1 {
+    display: table;
+    margin-left: 23.5%;
+    height: 50px;
+    border: 1px solid #d5d5d5;
+    box-shadow: 0px 1px 1px 0 rgba(0, 0, 0, 0.1);
+    /*padding: 3px;*/
+    float: left;
+    text-align: center;
+}
+
+    .preview-frame-1:hover {
+        background-color: #F5F5F5;
+    }
+
+.preview-image-1 {
+    height: 50px;
+    margin: 2px;
+    width: 165px;
+}
+
+.preview-frame-2 {
+    display: table;
+    margin-left: 41.1%;
+    height: 50px;
+    border: 1px solid #d5d5d5;
+    box-shadow: 0px 1px 1px 0 rgba(0, 0, 0, 0.1);
+    /*padding: 3px;*/
+    float: left;
+    text-align: center;
+}
+
+    .preview-frame-2:hover {
+        background-color: #F5F5F5;
+    }
+
+.preview-image-2 {
+    height: 50px;
+    margin: 2px;
+    width: 50px;
+}
+
+.preview-frame-3 {
+    display: table;
+    margin-left: 29%;
+    height: 125px;
+    border: 1px solid #d5d5d5;
+    box-shadow: 0px 1px 1px 0 rgba(0, 0, 0, 0.1);
+    /*padding: 3px;*/
+    float: left;
+    text-align: center;
+}
+
+    .preview-frame-3:hover {
+        background-color: #F5F5F5;
+    }
+
+.preview-image-3 {
+    height: 125px;
+    margin: 2px;
+    width: 125px;
+}
+
+.panel .panel-footer {
+    background: #edf7fc !important;
+    border-top: 1px solid #c7ebfd !important;
+}
+
+button.close {
+    color: #3a5795;
+    border: 1px solid #3a5795 !important;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    opacity: 1;
+    font-size: 19px;
+    text-shadow: none;
+}
+
+    button.close:hover {
+        background-color: #3a5795;
+        color: #fff;
+        opacity: 1;
+    }
+
+button.final_retreive_authontication_close {
+    color: #fff;
+    border: 1px solid #fff !important;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    margin: 7px;
+    opacity: 0.7;
+    font-size: 12px;
+    text-shadow: none;
+}
+
+    button.final_retreive_authontication_close:hover {
+        background-color: transparent !important;
+    }
+
+.BrowseField {
+    padding-left: 9px;
+    padding-right: 14px;
+}
+
+.UploadButton {
+    border-bottom-right-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+}
+
+.viewDocumentLink {
+    margin-top: 6px;
+}
+
+.panel-controls li a.btnDelete-Circle {
+    border-color: #b64645 !important;
+}
+
+.panel-controls li a.btnDelete-Circle:hover {
+    background-color: #b64645 !important;
+    color: #ffffff !important;
+}
+
+.panel-controls li a.btnDelete-Circle:hover span {
+        color: #ffffff !important;
+}
+
+.panel-controls li a.btnDelete-Circle span {
+    color: #b64645 !important;
+    background-color: transparent;
+}
+
+.panel-controls li a.btnDelete-Circle span:hover {
+    background-color: #b64645 !important;
+    color: #ffffff !important;
+}
+
+.x-navigation > li#btnShowProfileInfo > a > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-top: 5px;
+}
+
+.menuProfilePic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /*margin-top: 10px;
+    margin-left:10px;*/
+}
+
+.x-navigation > li#btnShowProfileInfo > a:hover {
+    background-color: transparent !important;
+}

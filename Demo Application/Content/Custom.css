@@ -1,0 +1,96 @@
+﻿#result {
+    height: 1px;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    top: 7px;
+    width: 100%;
+    z-index: 1100;
+}
+
+#result .resultMessage.error {
+    border: 1px solid #940808;
+    background-color: #FF3333; /*red;*/ /*#940808*/
+    text-shadow: 0 1px 0 rgba(114,6,6,.1);
+    -moz-box-shadow: 0 2px 2px rgba(148,8,8,.3);
+    -webkit-box-shadow: 0 2px 2px rgba(148,8,8,.3);
+    box-shadow: 0 2px 2px rgba(148,8,8,.3);
+}
+
+#result .resultMessage.warning {
+    border-color: #b2911e;
+background-color: #d8b025;
+    /*background-color: #f0ad4e;
+    border-color: #eea236;*/
+    /*text-shadow: 0 1px 0 rgba(178,145,30,.1);
+-moz-box-shadow: 0 2px 2px rgba(216,176,37,.3);
+-webkit-box-shadow: 0 2px 2px rgba(216,176,37,.3);
+box-shadow: 0 2px 2px rgba(216,176,37,.3);*/
+}
+
+#result .resultMessage.success {
+    border-color: #4a9b2b;
+    background-color: #61cb38;
+    /*background-color: #ffffcc;*/
+    text-shadow: 0 1px 0 rgba(74,155,43,.1);
+    -moz-box-shadow: 0 2px 2px rgba(97,203,56,.3);
+    -webkit-box-shadow: 0 2px 2px rgba(97,203,56,.3);
+    box-shadow: 0 2px 2px rgba(97,203,56,.3);
+}
+
+#result .info {
+    border-color: #2c60a0;
+    background-color: #387acb;
+    text-shadow: 0 1px 0 rgba(44,96,160,.1);
+    -moz-box-shadow: 0 2px 2px rgba(56,122,203,.3);
+    -webkit-box-shadow: 0 2px 2px rgba(56,122,203,.3);
+    box-shadow: 0 2px 2px rgba(56,122,203,.3);
+}
+
+#result .resultMessage {
+    background-color: #ffffcc;
+    display: inline-block;
+    /*padding: 2px 5px 3px;*/
+    padding: 4px 10px 6px;
+    border: 1px solid #b7b7b7;
+    border-radius: 4px 4px 4px 4px;
+    width: 30%;
+    /*opacity: 0.5;*/
+}
+
+#result .error span {
+    color: #fff;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+#result .success span {
+    color:#fff;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+#result .warning span {
+    color: #fff; /*#61cb38;*/
+    font-weight: bold;
+    z-index: 1000;
+}
+
+#result .resultMessage span {
+    /*color:#ff0000;*/
+    /*color: #FFFFFF;*/
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+#result .resultMessage span {
+    /*color:#ff0000;*/
+    /*color: #FFFFFF;*/
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+#result .resultMessage span {
+    font-size: 16px;
+    /*font-weight: 700;*/
+}
